@@ -12,14 +12,16 @@ class CofeeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var posterView: TVPosterView!
     
-    // MARK: - LayoutSubviews
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.posterView.clipsToBounds = true
+        self.posterView.layer.cornerRadius = 15
     }
     
     public func populateData(_ coffee: CoffeeNetworkResponse) {
         print(coffee.title)
         posterView.title = coffee.title
+        posterView.subtitle = nil
     }
     
     class func getNib() -> UINib {
