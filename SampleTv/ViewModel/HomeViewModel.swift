@@ -7,8 +7,11 @@
 
 import Foundation
 
+// MARK: - Class HomeViewModel
+
 class HomeViewModel: BaseViewModel {
     
+    // MARK: - Get Coffee API Call
     public func getCofeeApiCall(onSuccess: @escaping (CoffeeList) -> Void, onFailure: @escaping (NetworkRequestError) -> Void) {
 
         /// Network request object created with valid path and method

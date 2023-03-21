@@ -7,17 +7,28 @@
 
 import UIKit
 
+// MARK: - Class HomeViewController
+
 class HomeViewController: BaseViewController {
+    
+    // MARK: - Variables
     
     @IBOutlet weak var homeView: HomeView!
     
-    private var homeViewModel: HomeViewModel?
+    private lazy var homeViewModel: HomeViewModel? = {
+        return HomeViewModel()
+    }()
+    
+    
+    // MARK: - View Controller Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.getCoffeeList()
     }
+    
+    // MARK: - Private Functions
     
     private func getCoffeeList() {
         self.homeViewModel?.getCofeeApiCall(onSuccess: { CoffeeList in
@@ -28,9 +39,18 @@ class HomeViewController: BaseViewController {
         })
     }
     
+    // MARK: - Public Functions
+    
+    public func routeToCofeeDetail(_ coffee: CoffeeNetworkResponse) {
+        guard let vc = DetailViewController.initWithStory(coffee) else {return}
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    // MARK: - Navigation
+    
     class func initWithStory() -> HomeViewController? {
         let homeVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController
-        homeVc?.homeViewModel = HomeViewModel()
         return homeVc
     }
 }

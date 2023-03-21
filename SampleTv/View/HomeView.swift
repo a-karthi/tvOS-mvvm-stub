@@ -7,19 +7,31 @@
 
 import UIKit
 
+// MARK: - Class HomeView
+
 class HomeView: BaseView {
+    
+    // MARK: - Variables
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var coffeeData: CoffeeList?
+    
+    private var homeViewController: HomeViewController?
+    
+    
+    // MARK: - View Life Cycle
 
     override func didLoad(baseVC: BaseViewController) {
         super.didLoad(baseVC: baseVC)
+        self.homeViewController = baseVC as? HomeViewController
         print("Initiate View")
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(CofeeCollectionViewCell.getNib(), forCellWithReuseIdentifier: "CofeeCollectionViewCell")
     }
+    
+    // MARK: - Public Functions
     
     public func reloadUI(_ coffee: CoffeeList) {
         self.coffeeData = coffee
@@ -28,6 +40,8 @@ class HomeView: BaseView {
 
 }
 
+
+// MARK: - Extension HomeView - CollectionView
 
 extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -46,6 +60,11 @@ extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         guard let data = coffeeData?[indexPath.row] else {return UICollectionViewCell()}
         cell?.populateData(data)
         return cell ?? UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let data = coffeeData?[indexPath.row] else {return}
+        self.homeViewController?.routeToCofeeDetail(data)
     }
     
 }

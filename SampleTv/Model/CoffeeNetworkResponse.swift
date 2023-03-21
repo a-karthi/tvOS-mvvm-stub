@@ -13,6 +13,8 @@ class CoffeeNetworkResponse: Codable {
     let ingredients: [String]
     let image: String
     let id: Int
+    let isFavourite = false
+    let isInCart = false
     enum CodingKeys: String, CodingKey {
         case title
         case description

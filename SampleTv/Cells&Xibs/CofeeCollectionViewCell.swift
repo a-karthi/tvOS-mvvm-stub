@@ -15,7 +15,7 @@ class CofeeCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.posterView.clipsToBounds = true
-        self.posterView.layer.cornerRadius = 15
+        self.posterView.layer.cornerRadius = 20
         self.posterView.contentMode = .scaleAspectFit
     }
     
@@ -24,22 +24,10 @@ class CofeeCollectionViewCell: UICollectionViewCell {
         posterView.title = coffee.title
         posterView.subtitle = nil
         if let url = URL(string: coffee.image) {
-            self.downloadImage(from: url) { image in
+            ImageDownloader.downloadImage(from: url) { image in
                 self.posterView.image = image
             }
         }
-    }
-    
-    func downloadImage(from url: URL, completion: @escaping (UIImage?) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil else {
-                completion(nil)
-                return
-            }
-            DispatchQueue.main.async {
-                completion(UIImage(data: data))
-            }
-        }.resume()
     }
     
     class func getNib() -> UINib {
