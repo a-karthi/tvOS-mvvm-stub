@@ -19,7 +19,8 @@
                 <subviews>
                     <tvPosterView contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" title="Title" subtitle="Subtitle" translatesAutoresizingMaskIntoConstraints="NO" id="abF-NB-oPO">
                         <rect key="frame" x="0.0" y="0.0" width="585" height="516"/>
-                        <color key="backgroundColor" red="0.45098039220000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tvPosterView>
                 </subviews>
             </view>

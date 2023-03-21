@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,10 +20,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe &amp; Coffee Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQS-EN-kPB">
+                                <rect key="frame" x="80" y="15" width="1760" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ukM-ql-KA0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="65"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mws-hj-IdO">
-                                <rect key="frame" x="80" y="60" width="1760" height="960"/>
+                                <rect key="frame" x="80" y="165" width="1760" height="855"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LzJ-3Y-wj8">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="50" minimumInteritemSpacing="50" id="LzJ-3Y-wj8">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -38,14 +46,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wy-d5-3kw">
+                                <rect key="frame" x="80" y="40" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="f9D-wS-nOB"/>
+                                    <constraint firstAttribute="width" constant="200" id="fWv-a7-1U3"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Cart"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Mws-hj-IdO" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" id="S0p-qI-Lae"/>
+                            <constraint firstItem="9Wy-d5-3kw" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="O5p-sT-6BJ"/>
+                            <constraint firstItem="Mws-hj-IdO" firstAttribute="top" secondItem="pQS-EN-kPB" secondAttribute="bottom" id="S0p-qI-Lae"/>
+                            <constraint firstItem="pQS-EN-kPB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="15" id="kzo-um-LMz"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="pQS-EN-kPB" secondAttribute="trailing" id="pah-FK-Yh4"/>
+                            <constraint firstItem="9Wy-d5-3kw" firstAttribute="centerY" secondItem="pQS-EN-kPB" secondAttribute="centerY" id="tQb-Mc-mtm"/>
+                            <constraint firstItem="pQS-EN-kPB" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="vFt-hS-0yX"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="Mws-hj-IdO" secondAttribute="trailing" id="wqb-gy-2S2"/>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="bottom" secondItem="Mws-hj-IdO" secondAttribute="bottom" id="xyA-Cl-nk2"/>
                             <constraint firstItem="Mws-hj-IdO" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="yRt-CH-DkL"/>
@@ -63,9 +86,4 @@
             <point key="canvasLocation" x="123" y="-79"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

@@ -32,7 +32,9 @@ class HomeView: BaseView {
 extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+        let cellWidth = CGFloat(350)
+        let cellHeight = CGFloat(300)
+        return CGSize(width: cellWidth, height: cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -45,5 +47,5 @@ extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         cell?.populateData(data)
         return cell ?? UICollectionViewCell()
     }
-
+    
 }
