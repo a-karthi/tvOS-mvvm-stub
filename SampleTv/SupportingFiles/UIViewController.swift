@@ -17,7 +17,6 @@ extension UIViewController {
         } else if self.tabBarController?.presentingViewController is UITabBarController {
             return true
         }
-        
         return false
     }
 }

@@ -23,11 +23,16 @@ class DetailView: BaseView {
     
     @IBOutlet weak var addToCartButton: UIButton!
     
+    private var detailViewController: DetailViewController?
+    
+    private var coffee: CoffeeNetworkResponse?
+    
     
     // MARK: - View Life Cycle
 
     override func didLoad(baseVC: BaseViewController) {
         super.didLoad(baseVC: baseVC)
+        self.detailViewController = baseVC as? DetailViewController
         self.descriptionCofee.isUserInteractionEnabled = false
         self.coffeeImage.layer.cornerRadius = 50
         self.coffeeImage.clipsToBounds = true
@@ -36,7 +41,10 @@ class DetailView: BaseView {
     // MARK: - IBACtion functions
     
     @IBAction func addToCartFunction(_ sender: UIButton)  {
-        
+        if let coffee = self.coffee {
+            coffee.isInCart = !coffee.isInCart
+        }
+        self.detailViewController?.popToRoot()
     }
     
     // MARK: - Public Function
@@ -46,7 +54,12 @@ class DetailView: BaseView {
                 self.coffeeImage.image = img
             }
         }
+        self.coffee = coffe
         self.titleLabel.text = coffe.title
+        if let cof = self.coffee {
+            let title = coffe.isInCart ? "Remove from cart" : "Add to cart"
+            self.addToCartButton.setTitle(title, for: .normal)
+        }
         let ingredientsString = coffe.ingredients.joined(separator: ", ")
         self.descriptionCofee.text = coffe.description + "\nIngredients - \(ingredientsString)"
     }

@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Class DetailViewController
 
-class DetailViewController: UIViewController {
+class DetailViewController: BaseViewController {
 
     // MARK: - Variables
     
@@ -34,6 +34,12 @@ class DetailViewController: UIViewController {
         if let cof = self.detailViewModel?.getSelectedCoffee() {
             self.detailView.reloadUI(cof)
         }
+    }
+    
+    // MARK: - Public Functions
+    
+    public func popToRoot() {
+        self.navigationController?.popViewController(animated: true)
     }
 
 

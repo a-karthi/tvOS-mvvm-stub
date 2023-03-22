@@ -20,5 +20,7 @@ class DetailViewModel: BaseViewModel {
     public func setSelectedCoffeeData(_ coffee: CoffeeNetworkResponse) {
         self.selectedCoffee = coffee
     }
+    
+    
 }
 

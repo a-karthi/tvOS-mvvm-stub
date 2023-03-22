@@ -29,4 +29,23 @@ class HomeViewModel: BaseViewModel {
             }
         }
     }
+    
+    public func setSharedCoffeList(_ coffee: CoffeeList) {
+        SharedCoffeList.shared.coffeeList = coffee
+    }
+    
+    public func checkCartItems() -> CoffeeList? {
+        if let cartItems = SharedCoffeList.shared.coffeeList?.filter({$0.isInCart}),
+           cartItems.count > 0 {
+            return cartItems
+        } else {
+            return nil
+        }
+    }
+}
+
+
+class SharedCoffeList {
+    static let shared = SharedCoffeList()
+    public var coffeeList: CoffeeList?
 }

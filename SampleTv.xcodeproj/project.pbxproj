@@ -19,6 +19,9 @@
 		CA06F40929C98DAB00DB53AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40829C98DAB00DB53AB /* DetailView.swift */; };
 		CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */; };
 		CA06F40D29C997AB00DB53AB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */; };
+		CAD1F45A29CB1BD800735BCC /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */; };
+		CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */; };
+		CAD1F45E29CB1F0000735BCC /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */; };
 		CAF1DC8B29C887210008544D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DC8A29C887210008544D /* HomeView.swift */; };
 		CAF1DC9129C887690008544D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DC8D29C887690008544D /* APIConstants.swift */; };
 		CAF1DC9229C887690008544D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DC8E29C887690008544D /* NetworkManager.swift */; };
@@ -72,6 +75,9 @@
 		CA06F40829C98DAB00DB53AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
+		CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
 		CAF1DC8A29C887210008544D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CAF1DC8D29C887690008544D /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		CAF1DC8E29C887690008544D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 			children = (
 				CAF1DC8A29C887210008544D /* HomeView.swift */,
 				CA06F40829C98DAB00DB53AB /* DetailView.swift */,
+				CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 			children = (
 				CA01EB6529C8846F00CD12BF /* HomeViewController.swift */,
 				CA06F40629C9840E00DB53AB /* DetailViewController.swift */,
+				CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 			children = (
 				CAF1DCAE29C8C0000008544D /* CofeeCollectionViewCell.swift */,
 				CAF1DCAF29C8C0000008544D /* CofeeCollectionViewCell.xib */,
+				CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */,
 			);
 			path = "Cells&Xibs";
 			sourceTree = "<group>";
@@ -392,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */,
 				CAF1DCAA29C8B2030008544D /* HomeViewModel.swift in Sources */,
 				CAF1DC9429C887690008544D /* NetworkRequest.swift in Sources */,
 				CAF1DC9129C887690008544D /* APIConstants.swift in Sources */,
@@ -404,6 +414,7 @@
 				CAF1DC9229C887690008544D /* NetworkManager.swift in Sources */,
 				CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */,
 				CA01EB6629C8846F00CD12BF /* HomeViewController.swift in Sources */,
+				CAD1F45A29CB1BD800735BCC /* CheckOutViewController.swift in Sources */,
 				CA06F40929C98DAB00DB53AB /* DetailView.swift in Sources */,
 				CAF1DCAC29C8B6E50008544D /* CoffeeNetworkResponse.swift in Sources */,
 				CAF1DCA229C8ADF90008544D /* BaseViewModel.swift in Sources */,
@@ -413,6 +424,7 @@
 				CAF1DCA429C8AE540008544D /* BaseView.swift in Sources */,
 				CAF1DCB029C8C0000008544D /* CofeeCollectionViewCell.swift in Sources */,
 				CAF1DC9729C8A8E80008544D /* Json.swift in Sources */,
+				CAD1F45E29CB1F0000735BCC /* CheckoutTableViewCell.swift in Sources */,
 				CAF1DCA829C8B0580008544D /* UIViewController.swift in Sources */,
 				CAF1DC9B29C8AA9F0008544D /* AppConstants.swift in Sources */,
 			);

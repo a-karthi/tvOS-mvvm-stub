@@ -19,6 +19,8 @@ class HomeViewController: BaseViewController {
         return HomeViewModel()
     }()
     
+    private var cartItems: CoffeeList?
+    
     
     // MARK: - View Controller Life Cycle
 
@@ -28,11 +30,21 @@ class HomeViewController: BaseViewController {
         self.getCoffeeList()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let cartItems = self.homeViewModel?.checkCartItems() {
+            self.cartItems = cartItems
+            self.homeView.changeCartButtonUI(.green)
+        } else {
+            self.homeView.changeCartButtonUI(.white)
+        }
+    }
+    
     // MARK: - Private Functions
     
     private func getCoffeeList() {
         self.homeViewModel?.getCofeeApiCall(onSuccess: { CoffeeList in
-            print(CoffeeList)
+            self.homeViewModel?.setSharedCoffeList(CoffeeList)
             self.homeView.reloadUI(CoffeeList)
         }, onFailure: { err in
             print(err)
@@ -44,6 +56,13 @@ class HomeViewController: BaseViewController {
     public func routeToCofeeDetail(_ coffee: CoffeeNetworkResponse) {
         guard let vc = DetailViewController.initWithStory(coffee) else {return}
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    public func routeToChekOutScreen() {
+        if let cart = self.cartItems {
+            guard let vc = CheckOutViewController.initWithStory(cart) else {return}
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     

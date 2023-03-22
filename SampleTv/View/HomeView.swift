@@ -15,7 +15,7 @@ class HomeView: BaseView {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var coffeeData: CoffeeList?
+    @IBOutlet weak var cartButton: UIButton!
     
     private var homeViewController: HomeViewController?
     
@@ -34,8 +34,17 @@ class HomeView: BaseView {
     // MARK: - Public Functions
     
     public func reloadUI(_ coffee: CoffeeList) {
-        self.coffeeData = coffee
         self.collectionView.reloadData()
+    }
+    
+    public func changeCartButtonUI(_ color: UIColor) {
+        self.cartButton.backgroundColor = color
+    }
+    
+    // MARK: - IBAction Functions
+    
+    @IBAction func cartButtonAction(_ sender: UIButton) {
+        self.homeViewController?.routeToChekOutScreen()
     }
 
 }
@@ -52,18 +61,18 @@ extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return coffeeData?.count ?? 0
+        return SharedCoffeList.shared.coffeeList?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CofeeCollectionViewCell", for: indexPath) as? CofeeCollectionViewCell
-        guard let data = coffeeData?[indexPath.row] else {return UICollectionViewCell()}
+        guard let data = SharedCoffeList.shared.coffeeList?[indexPath.row] else {return UICollectionViewCell()}
         cell?.populateData(data)
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let data = coffeeData?[indexPath.row] else {return}
+        guard let data = SharedCoffeList.shared.coffeeList?[indexPath.row] else {return}
         self.homeViewController?.routeToCofeeDetail(data)
     }
     
