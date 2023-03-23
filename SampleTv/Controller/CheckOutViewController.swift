@@ -36,7 +36,10 @@ class CheckOutViewController: BaseViewController {
     // MARK: - Public Functions
     
     public func popToRoot() {
-        self.navigationController?.popViewController(animated: true)
+        self.showAlert(title: "Cafe & Coffee Day", message: "Order Placed! \n Your Order Id: \(UUID().description)") {
+            SharedCoffeList.shared.coffeeList?.compactMap({$0.isInCart = false})
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
 
 

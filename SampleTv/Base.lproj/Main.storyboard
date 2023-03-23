@@ -51,14 +51,18 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wy-d5-3kw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wy-d5-3kw">
                                 <rect key="frame" x="80" y="40" width="200" height="100"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="f9D-wS-nOB"/>
                                     <constraint firstAttribute="width" constant="200" id="fWv-a7-1U3"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Cart"/>
+                                <state key="normal" image="cart">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="cart"/>
                                 <connections>
                                     <action selector="cartButtonAction:" destination="8bC-Xf-vdC" eventType="primaryActionTriggered" id="yQe-Gb-gpH"/>
                                 </connections>
@@ -254,12 +258,29 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLQ-CG-Zfd">
+                                <rect key="frame" x="95" y="825" width="1730" height="180"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="ZNf-d9-k6K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="56"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Check Out"/>
+                                <connections>
+                                    <action selector="cartButtonAction:" destination="8bC-Xf-vdC" eventType="primaryActionTriggered" id="18s-vG-qhg"/>
+                                    <action selector="checkOutFunction:" destination="lnT-Tp-ZlL" eventType="primaryActionTriggered" id="aFH-uZ-qo0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fZC-HT-YWT"/>
                         <constraints>
                             <constraint firstItem="fZC-HT-YWT" firstAttribute="bottom" secondItem="wLE-GZ-j77" secondAttribute="bottom" id="0yh-0c-mOr"/>
                             <constraint firstItem="wLE-GZ-j77" firstAttribute="leading" secondItem="fZC-HT-YWT" secondAttribute="leading" id="7sn-kz-jel"/>
                             <constraint firstItem="wLE-GZ-j77" firstAttribute="top" secondItem="fZC-HT-YWT" secondAttribute="top" id="KSM-5w-DRX"/>
+                            <constraint firstItem="zLQ-CG-Zfd" firstAttribute="leading" secondItem="fZC-HT-YWT" secondAttribute="leading" constant="15" id="Mkk-KP-odX"/>
+                            <constraint firstItem="fZC-HT-YWT" firstAttribute="trailing" secondItem="zLQ-CG-Zfd" secondAttribute="trailing" constant="15" id="enT-WO-EWD"/>
+                            <constraint firstItem="fZC-HT-YWT" firstAttribute="bottom" secondItem="zLQ-CG-Zfd" secondAttribute="bottom" constant="15" id="fUh-4S-Avu"/>
                             <constraint firstItem="fZC-HT-YWT" firstAttribute="trailing" secondItem="wLE-GZ-j77" secondAttribute="trailing" id="q3G-NA-sWs"/>
                         </constraints>
                         <connections>
@@ -276,8 +297,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart" width="60" height="60"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

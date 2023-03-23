@@ -36,7 +36,7 @@ class HomeViewController: BaseViewController {
             self.cartItems = cartItems
             self.homeView.changeCartButtonUI(.green)
         } else {
-            self.homeView.changeCartButtonUI(.white)
+            self.homeView.changeCartButtonUI(.tertiaryLabel)
         }
     }
     
