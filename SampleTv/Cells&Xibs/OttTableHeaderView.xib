@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OttTableHeaderView" customModule="SampleTv" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="OttTableHeaderView" id="iN0-l3-epB" customClass="OttTableHeaderView" customModule="SampleTv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1466" height="202"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDK-dr-rda">
+                    <rect key="frame" x="15" y="15" width="1436" height="172"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6M-HY-aO2">
+                            <rect key="frame" x="50" y="15" width="1151" height="142"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8U-7f-emV">
+                            <rect key="frame" x="1216" y="15" width="220" height="142"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="220" id="rkE-Mc-wux"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="See More">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="a6M-HY-aO2" secondAttribute="bottom" constant="15" id="BQJ-bo-hAR"/>
+                        <constraint firstItem="r8U-7f-emV" firstAttribute="leading" secondItem="a6M-HY-aO2" secondAttribute="trailing" constant="15" id="E6T-VY-jHb"/>
+                        <constraint firstItem="r8U-7f-emV" firstAttribute="top" secondItem="LDK-dr-rda" secondAttribute="top" constant="15" id="Yuy-DQ-JBY"/>
+                        <constraint firstItem="a6M-HY-aO2" firstAttribute="top" secondItem="LDK-dr-rda" secondAttribute="top" constant="15" id="kt6-G8-eiP"/>
+                        <constraint firstAttribute="trailing" secondItem="r8U-7f-emV" secondAttribute="trailing" id="pAi-K2-byi"/>
+                        <constraint firstAttribute="bottom" secondItem="r8U-7f-emV" secondAttribute="bottom" constant="15" id="sYb-Ui-Flk"/>
+                        <constraint firstItem="a6M-HY-aO2" firstAttribute="leading" secondItem="LDK-dr-rda" secondAttribute="leading" constant="50" id="yay-d1-EiE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pmt-tb-8Ig"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LDK-dr-rda" secondAttribute="trailing" constant="15" id="fGf-gJ-2R8"/>
+                <constraint firstItem="LDK-dr-rda" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="hJX-LX-rO3"/>
+                <constraint firstAttribute="bottom" secondItem="LDK-dr-rda" secondAttribute="bottom" constant="15" id="pBu-c3-Vfx"/>
+                <constraint firstItem="LDK-dr-rda" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="rBS-cz-IdW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="LDK-dr-rda" id="MoA-ne-29q"/>
+                <outlet property="nameLabel" destination="a6M-HY-aO2" id="eNM-zA-pDq"/>
+                <outlet property="seeMoreButton" destination="r8U-7f-emV" id="8J4-B2-lgd"/>
+            </connections>
+            <point key="canvasLocation" x="-360" y="-226"/>
+        </view>
+    </objects>
+</document>

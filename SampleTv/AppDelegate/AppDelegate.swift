@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Create your root view controller
-        guard let rootViewController = HomeViewController.initWithStory() else {return true}
+        guard let rootViewController = OttHomeViewControler.initWithStory() else {return true}
         let nav = UINavigationController(rootViewController: rootViewController)
         // Set the root view controller of the app's window
         window = UIWindow(frame: UIScreen.main.bounds)

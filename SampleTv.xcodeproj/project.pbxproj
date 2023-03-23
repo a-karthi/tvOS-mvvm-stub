@@ -19,6 +19,8 @@
 		CA06F40929C98DAB00DB53AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40829C98DAB00DB53AB /* DetailView.swift */; };
 		CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */; };
 		CA06F40D29C997AB00DB53AB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */; };
+		CA23D4F629CC5AA2009B8688 /* RailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23D4F429CC5AA2009B8688 /* RailTableViewCell.swift */; };
+		CA23D4F929CC5C1C009B8688 /* RailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA23D4F829CC5C1C009B8688 /* RailTableViewCell.xib */; };
 		CAD1F45A29CB1BD800735BCC /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */; };
 		CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */; };
 		CAD1F45E29CB1F0000735BCC /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */; };
@@ -40,6 +42,11 @@
 		CAF1DCAC29C8B6E50008544D /* CoffeeNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DCAB29C8B6E50008544D /* CoffeeNetworkResponse.swift */; };
 		CAF1DCB029C8C0000008544D /* CofeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DCAE29C8C0000008544D /* CofeeCollectionViewCell.swift */; };
 		CAF1DCB129C8C0000008544D /* CofeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF1DCAF29C8C0000008544D /* CofeeCollectionViewCell.xib */; };
+		CAF4CF6729CC362A00CF14BB /* OttHomeViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4CF6629CC362A00CF14BB /* OttHomeViewControler.swift */; };
+		CAF4CF6929CC369700CF14BB /* OttHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4CF6829CC369700CF14BB /* OttHomeView.swift */; };
+		CAF4CF6B29CC372100CF14BB /* OttHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4CF6A29CC372100CF14BB /* OttHomeViewModel.swift */; };
+		CAF4CF6D29CC48DD00CF14BB /* OttTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4CF6C29CC48DD00CF14BB /* OttTableHeaderView.swift */; };
+		CAF4CF6F29CC495200CF14BB /* OttTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF4CF6E29CC495200CF14BB /* OttTableHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +82,8 @@
 		CA06F40829C98DAB00DB53AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		CA23D4F429CC5AA2009B8688 /* RailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailTableViewCell.swift; sourceTree = "<group>"; };
+		CA23D4F829CC5C1C009B8688 /* RailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RailTableViewCell.xib; sourceTree = "<group>"; };
 		CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 		CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -96,6 +105,11 @@
 		CAF1DCAB29C8B6E50008544D /* CoffeeNetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeNetworkResponse.swift; sourceTree = "<group>"; };
 		CAF1DCAE29C8C0000008544D /* CofeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CofeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAF1DCAF29C8C0000008544D /* CofeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CofeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAF4CF6629CC362A00CF14BB /* OttHomeViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OttHomeViewControler.swift; path = SampleTv/OttHomeViewControler.swift; sourceTree = SOURCE_ROOT; };
+		CAF4CF6829CC369700CF14BB /* OttHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OttHomeView.swift; sourceTree = "<group>"; };
+		CAF4CF6A29CC372100CF14BB /* OttHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OttHomeViewModel.swift; sourceTree = "<group>"; };
+		CAF4CF6C29CC48DD00CF14BB /* OttTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OttTableHeaderView.swift; sourceTree = "<group>"; };
+		CAF4CF6E29CC495200CF14BB /* OttTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OttTableHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +217,7 @@
 				CAF1DC8A29C887210008544D /* HomeView.swift */,
 				CA06F40829C98DAB00DB53AB /* DetailView.swift */,
 				CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */,
+				CAF4CF6829CC369700CF14BB /* OttHomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +227,7 @@
 			children = (
 				CAF1DCA929C8B2030008544D /* HomeViewModel.swift */,
 				CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */,
+				CAF4CF6A29CC372100CF14BB /* OttHomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -222,6 +238,7 @@
 				CA01EB6529C8846F00CD12BF /* HomeViewController.swift */,
 				CA06F40629C9840E00DB53AB /* DetailViewController.swift */,
 				CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */,
+				CAF4CF6629CC362A00CF14BB /* OttHomeViewControler.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,9 +279,13 @@
 		CAF1DCAD29C8BFCB0008544D /* Cells&Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				CA23D4F429CC5AA2009B8688 /* RailTableViewCell.swift */,
 				CAF1DCAE29C8C0000008544D /* CofeeCollectionViewCell.swift */,
 				CAF1DCAF29C8C0000008544D /* CofeeCollectionViewCell.xib */,
 				CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */,
+				CAF4CF6C29CC48DD00CF14BB /* OttTableHeaderView.swift */,
+				CAF4CF6E29CC495200CF14BB /* OttTableHeaderView.xib */,
+				CA23D4F829CC5C1C009B8688 /* RailTableViewCell.xib */,
 			);
 			path = "Cells&Xibs";
 			sourceTree = "<group>";
@@ -374,9 +395,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA01EB6E29C8847400CD12BF /* LaunchScreen.storyboard in Resources */,
+				CA23D4F929CC5C1C009B8688 /* RailTableViewCell.xib in Resources */,
 				CAF1DCB129C8C0000008544D /* CofeeCollectionViewCell.xib in Resources */,
 				CA01EB6B29C8847400CD12BF /* Assets.xcassets in Resources */,
 				CA01EB6929C8846F00CD12BF /* Main.storyboard in Resources */,
+				CAF4CF6F29CC495200CF14BB /* OttTableHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,19 +437,24 @@
 				CAF1DC9229C887690008544D /* NetworkManager.swift in Sources */,
 				CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */,
 				CA01EB6629C8846F00CD12BF /* HomeViewController.swift in Sources */,
+				CA23D4F629CC5AA2009B8688 /* RailTableViewCell.swift in Sources */,
 				CAD1F45A29CB1BD800735BCC /* CheckOutViewController.swift in Sources */,
 				CA06F40929C98DAB00DB53AB /* DetailView.swift in Sources */,
 				CAF1DCAC29C8B6E50008544D /* CoffeeNetworkResponse.swift in Sources */,
 				CAF1DCA229C8ADF90008544D /* BaseViewModel.swift in Sources */,
 				CAF1DC9D29C8AB020008544D /* Reachability.swift in Sources */,
 				CAF1DC9F29C8AB5A0008544D /* ErrorNetworkResponse.swift in Sources */,
+				CAF4CF6929CC369700CF14BB /* OttHomeView.swift in Sources */,
+				CAF4CF6729CC362A00CF14BB /* OttHomeViewControler.swift in Sources */,
 				CA01EB6429C8846F00CD12BF /* AppDelegate.swift in Sources */,
+				CAF4CF6D29CC48DD00CF14BB /* OttTableHeaderView.swift in Sources */,
 				CAF1DCA429C8AE540008544D /* BaseView.swift in Sources */,
 				CAF1DCB029C8C0000008544D /* CofeeCollectionViewCell.swift in Sources */,
 				CAF1DC9729C8A8E80008544D /* Json.swift in Sources */,
 				CAD1F45E29CB1F0000735BCC /* CheckoutTableViewCell.swift in Sources */,
 				CAF1DCA829C8B0580008544D /* UIViewController.swift in Sources */,
 				CAF1DC9B29C8AA9F0008544D /* AppConstants.swift in Sources */,
+				CAF4CF6B29CC372100CF14BB /* OttHomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
