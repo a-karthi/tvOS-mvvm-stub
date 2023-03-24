@@ -19,10 +19,6 @@ class OttHomeView: BaseView {
     
     @IBOutlet weak var ottTableView: UITableView!
     
-    @IBOutlet weak var tableHeaderView: UIView!
-    
-    @IBOutlet weak var headerPoster: UIImageView!
-    
     private var ottHomeViewController: OttHomeViewControler?
     
     
@@ -40,9 +36,8 @@ class OttHomeView: BaseView {
     public func reloadUI() {
         self.ottTableView.delegate = self
         self.ottTableView.dataSource = self
+        self.ottTableView.register(PlayerTableViewCell.getNib(), forCellReuseIdentifier: "PlayerTableViewCell")
         self.ottTableView.register(OttTableHeaderView.getNib(), forHeaderFooterViewReuseIdentifier: "OttTableHeaderView")
-        self.headerPoster.clipsToBounds = true
-        self.headerPoster.layer.cornerRadius = 20
         ottTableView.register(RailTableViewCell.getNib(), forCellReuseIdentifier: "RailTableViewCell")
     }
     
@@ -59,7 +54,7 @@ class OttHomeView: BaseView {
 
 extension OttHomeView: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,8 +66,10 @@ extension OttHomeView: UITableViewDelegate, UITableViewDataSource {
             withIdentifier: "OttTableHeaderView") as? OttTableHeaderView
         switch section {
         case 0:
-            header?.populateDateCell("Latest & Trending")
+            header?.populateDateCell("Trailers")
         case 1:
+            header?.populateDateCell("Latest & Trending")
+        case 2:
             header?.populateDateCell("Popular Movies")
         default:
             header?.populateDateCell("Movies from 2020's")
@@ -86,26 +83,32 @@ extension OttHomeView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 350
+        return indexPath.section == 0 ? 450 : 350
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RailTableViewCell", for: indexPath) as? RailTableViewCell
         switch indexPath.section {
         case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerTableViewCell", for: indexPath) as? PlayerTableViewCell
+            return cell ?? UITableViewCell()
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RailTableViewCell", for: indexPath) as? RailTableViewCell
             if let strs = self.ottHomeViewController?.getLatestTrendingMovies() {
                 cell?.loadData(strs)
             }
-        case 1:
+            return cell ?? UITableViewCell()
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RailTableViewCell", for: indexPath) as? RailTableViewCell
             if let strs = self.ottHomeViewController?.getPopularMovies() {
                 cell?.loadData(strs)
             }
+            return cell ?? UITableViewCell()
         default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RailTableViewCell", for: indexPath) as? RailTableViewCell
             if let strs = self.ottHomeViewController?.getPopularShows() {
                 cell?.loadData(strs)
             }
+            return cell ?? UITableViewCell()
         }
-        
-        return cell ?? UITableViewCell()
     }
 }

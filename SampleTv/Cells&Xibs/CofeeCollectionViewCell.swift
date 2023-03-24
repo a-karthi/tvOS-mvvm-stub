@@ -15,7 +15,7 @@ class CofeeCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.posterView.clipsToBounds = true
-        self.posterView.layer.cornerRadius = 25
+        self.posterView.layer.cornerRadius = 30
         self.posterView.contentMode = .scaleAspectFit
     }
     

@@ -336,7 +336,7 @@
                                             <segment title="Kids"/>
                                         </segments>
                                     </segmentedControl>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Xh-Lt-iYO">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Xh-Lt-iYO">
                                         <rect key="frame" x="1255" y="15" width="585" height="70"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -362,47 +362,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="kaj-dJ-h0s">
                                 <rect key="frame" x="30" y="130" width="1860" height="920"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="Stg-8c-3AO">
-                                    <rect key="frame" x="0.0" y="0.0" width="1860" height="500"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ip-eY-L7E">
-                                            <rect key="frame" x="15" y="15" width="1830" height="470"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_poster" translatesAutoresizingMaskIntoConstraints="NO" id="uM1-NU-NLH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="1830" height="470"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msc-b5-mly">
-                                                    <rect key="frame" x="840" y="160" width="150" height="150"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="08V-8S-YZD"/>
-                                                        <constraint firstAttribute="height" constant="150" id="IUb-ti-ide"/>
-                                                    </constraints>
-                                                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="uM1-NU-NLH" secondAttribute="bottom" id="EiR-u8-Mwq"/>
-                                                <constraint firstItem="uM1-NU-NLH" firstAttribute="top" secondItem="5ip-eY-L7E" secondAttribute="top" id="cTQ-xa-yQM"/>
-                                                <constraint firstItem="uM1-NU-NLH" firstAttribute="leading" secondItem="5ip-eY-L7E" secondAttribute="leading" id="fGV-xg-Fhe"/>
-                                                <constraint firstItem="Msc-b5-mly" firstAttribute="centerY" secondItem="5ip-eY-L7E" secondAttribute="centerY" id="fgd-Mq-dea"/>
-                                                <constraint firstAttribute="trailing" secondItem="uM1-NU-NLH" secondAttribute="trailing" id="vYb-KI-Lbw"/>
-                                                <constraint firstItem="Msc-b5-mly" firstAttribute="centerX" secondItem="5ip-eY-L7E" secondAttribute="centerX" id="yUO-mU-Z4N"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="5ip-eY-L7E" firstAttribute="top" secondItem="Stg-8c-3AO" secondAttribute="top" constant="15" id="DHJ-hG-7gY"/>
-                                        <constraint firstItem="5ip-eY-L7E" firstAttribute="leading" secondItem="Stg-8c-3AO" secondAttribute="leading" constant="15" id="Hxk-y9-JIv"/>
-                                        <constraint firstAttribute="trailing" secondItem="5ip-eY-L7E" secondAttribute="trailing" constant="15" id="aDu-4x-lSB"/>
-                                        <constraint firstAttribute="bottom" secondItem="5ip-eY-L7E" secondAttribute="bottom" constant="15" id="asF-e0-ghN"/>
-                                    </constraints>
-                                </view>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2PI-i9-H1d"/>
@@ -417,11 +376,9 @@
                             <constraint firstItem="kaj-dJ-h0s" firstAttribute="top" secondItem="n7V-HC-aM6" secondAttribute="bottom" constant="30" id="tUv-YM-J3E"/>
                         </constraints>
                         <connections>
-                            <outlet property="headerPoster" destination="uM1-NU-NLH" id="vGk-bb-Oom"/>
                             <outlet property="menuBtn" destination="B02-to-wpV" id="6sK-uJ-h7w"/>
                             <outlet property="ottTableView" destination="kaj-dJ-h0s" id="5cq-CV-y5O"/>
                             <outlet property="searchField" destination="3Xh-Lt-iYO" id="TN4-Ub-2as"/>
-                            <outlet property="tableHeaderView" destination="5ip-eY-L7E" id="FMx-Su-Ya7"/>
                             <outlet property="topSegment" destination="llX-Yz-rLa" id="Mjj-5A-Qxj"/>
                         </connections>
                     </view>
@@ -435,10 +392,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="avatar_poster" width="2920" height="1604"/>
         <image name="cart" width="60" height="60"/>
         <image name="menu" width="40" height="40"/>
-        <image name="play.fill" catalog="system" width="112" height="128"/>
         <namedColor name="Hotstar-Colour">
             <color red="0.15294117647058825" green="0.19607843137254902" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
