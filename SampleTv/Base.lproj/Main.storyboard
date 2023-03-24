@@ -390,10 +390,109 @@
             </objects>
             <point key="canvasLocation" x="1229" y="1538"/>
         </scene>
+        <!--Player View Controller-->
+        <scene sceneID="pBG-aH-qzW">
+            <objects>
+                <viewController storyboardIdentifier="MP3PlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nNP-FC-h3F" customClass="MP3PlayerViewController" customModule="SampleTv" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5qi-U9-Wn0"/>
+                        <viewControllerLayoutGuide type="bottom" id="13f-n7-Yyq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="MP3PlayerView" id="aNh-5N-YRl" customClass="MP3PlayerView" customModule="SampleTv" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M4P-zs-VSe">
+                                <rect key="frame" x="760" y="75" width="400" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="1kq-LM-OWb"/>
+                                    <constraint firstAttribute="height" constant="500" id="9jJ-Tj-BiR"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CFE-NZ-xAd">
+                                <rect key="frame" x="130" y="775" width="1660" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="lhK-0j-auB"/>
+                                </constraints>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="GGx-Gj-z66">
+                                <rect key="frame" x="510" y="820" width="900" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-EV-mQW">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="55W-q8-95o"/>
+                                            <constraint firstAttribute="width" constant="200" id="eu5-oY-ibX"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="previous"/>
+                                        <connections>
+                                            <action selector="previousButtonAction:" destination="aNh-5N-YRl" eventType="primaryActionTriggered" id="xsu-ks-kZ6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX9-X6-3J3">
+                                        <rect key="frame" x="350" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="CDW-Mb-gIa"/>
+                                            <constraint firstAttribute="height" constant="200" id="J6z-nW-KFd"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play"/>
+                                        <connections>
+                                            <action selector="playButtonAction:" destination="aNh-5N-YRl" eventType="primaryActionTriggered" id="S4Y-pt-vYd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cg6-IM-KuP">
+                                        <rect key="frame" x="700" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="AWW-Pf-YFQ"/>
+                                            <constraint firstAttribute="height" constant="200" id="Mjy-DR-eoU"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="next"/>
+                                        <connections>
+                                            <action selector="nextButtonAction:" destination="aNh-5N-YRl" eventType="primaryActionTriggered" id="D1W-by-MZq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2WK-Uf-pz0"/>
+                        <constraints>
+                            <constraint firstItem="GGx-Gj-z66" firstAttribute="centerX" secondItem="2WK-Uf-pz0" secondAttribute="centerX" id="3Al-ev-kaB"/>
+                            <constraint firstItem="2WK-Uf-pz0" firstAttribute="trailing" secondItem="CFE-NZ-xAd" secondAttribute="trailing" constant="50" id="DUa-7V-ywj"/>
+                            <constraint firstItem="GGx-Gj-z66" firstAttribute="bottom" secondItem="2WK-Uf-pz0" secondAttribute="bottom" id="Qvx-xX-BCe"/>
+                            <constraint firstItem="CFE-NZ-xAd" firstAttribute="top" secondItem="M4P-zs-VSe" secondAttribute="bottom" constant="200" id="a72-WQ-MS3"/>
+                            <constraint firstItem="M4P-zs-VSe" firstAttribute="centerX" secondItem="2WK-Uf-pz0" secondAttribute="centerX" id="nop-OA-bOs"/>
+                            <constraint firstItem="CFE-NZ-xAd" firstAttribute="leading" secondItem="2WK-Uf-pz0" secondAttribute="leading" constant="50" id="yMV-19-bTh"/>
+                            <constraint firstItem="M4P-zs-VSe" firstAttribute="top" secondItem="2WK-Uf-pz0" secondAttribute="top" constant="15" id="zKJ-ij-njQ"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="nextButton" destination="cg6-IM-KuP" id="juG-cb-lxR"/>
+                            <outlet property="playButton" destination="OX9-X6-3J3" id="Ef8-EB-S9S"/>
+                            <outlet property="prevButton" destination="2EN-EV-mQW" id="gnD-s2-0pA"/>
+                            <outlet property="songProgress" destination="CFE-NZ-xAd" id="ysF-9A-VGS"/>
+                            <outlet property="songThumb" destination="M4P-zs-VSe" id="Urv-23-Vza"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="mp3PlayerView" destination="aNh-5N-YRl" id="odX-Ot-6AY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kft-bd-XzD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846" y="1538"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cart" width="60" height="60"/>
         <image name="menu" width="40" height="40"/>
+        <image name="next" width="129" height="129"/>
+        <image name="play" width="178" height="178"/>
+        <image name="previous" width="129" height="129"/>
         <namedColor name="Hotstar-Colour">
             <color red="0.15294117647058825" green="0.19607843137254902" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

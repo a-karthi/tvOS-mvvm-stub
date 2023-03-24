@@ -32,6 +32,11 @@ class OttHomeViewControler: BaseViewController {
     // MARK: - Private Functions
     // MARK: - Public Functions
     
+    public func routeToMp3Player(_ mp3: MP3Model) {
+        guard let vc = MP3PlayerViewController.initWithStory(mp3) else {return}
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     public func getLatestTrendingMovies() -> [String]?{
         self.ottHomeViewModel?.trendingMovies
     }
@@ -42,6 +47,10 @@ class OttHomeViewControler: BaseViewController {
     
     public func getPopularShows() -> [String]?{
         self.ottHomeViewModel?.popularShows
+    }
+    
+    public func getMusicList() -> [MP3Model]?{
+        self.ottHomeViewModel?.mp3List
     }
     
     

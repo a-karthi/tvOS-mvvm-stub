@@ -41,4 +41,11 @@ class OttHomeViewModel: BaseViewModel {
                                   "show8",
                                   "show9",
                                   "show10" ]
+    
+    public var mp3List = [
+        MP3Model(songThumpImageName: "leo", songName: "Bloody Sweet", artistName: "Anirudh", albumName: "Leo"),
+        MP3Model(songThumpImageName: "mic1", songName: "Baby Be Mine", artistName: "Micheal Jackson", albumName: "Thriller"),
+        MP3Model(songThumpImageName: "mic2", songName: "Beat It", artistName: "Micheal Jackson", albumName: "Thriller"),
+        MP3Model(songThumpImageName: "mic3", songName: "Billie Jean", artistName: "Micheal Jackson", albumName: "Thriller")
+    ]
 }

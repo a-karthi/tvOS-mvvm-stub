@@ -8,11 +8,27 @@
 
 import UIKit
 
+enum cellPurpose {
+    case movies
+    case music
+}
+
+protocol RailTableViewCellDidSelectProtocol {
+    func didSelectMusic(_ mp3: MP3Model)
+}
+
+
 class RailTableViewCell: UITableViewCell {
     
     @IBOutlet weak var railCollectionView: UICollectionView!
     
     var strs = [String]()
+    
+    var musicList = [MP3Model]()
+    
+    var purpose:cellPurpose = .movies
+    
+    var delegate: RailTableViewCellDidSelectProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,6 +43,13 @@ class RailTableViewCell: UITableViewCell {
     
     public func loadData(_ data: [String]) {
         self.strs = data
+        self.purpose = .movies
+        railCollectionView.reloadData()
+    }
+    
+    public func loadMp3s(_ data: [MP3Model]) {
+        self.musicList = data
+        self.purpose = .music
         railCollectionView.reloadData()
     }
     
@@ -41,13 +64,19 @@ class RailTableViewCell: UITableViewCell {
 
 extension RailTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return strs.count
+        return purpose == .movies ? strs.count : musicList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CofeeCollectionViewCell", for: indexPath) as? CofeeCollectionViewCell
-        let str = strs[indexPath.row]
-        collectionCell?.posterView.image = UIImage(named: str)
+        switch purpose {
+        case .movies:
+            let str = strs[indexPath.row]
+            collectionCell?.posterView.image = UIImage(named: str)
+        case .music:
+            let str = musicList[indexPath.row]
+            collectionCell?.posterView.image = UIImage(named: str.songThumpImageName)
+        }
         collectionCell?.posterView.title = nil
         collectionCell?.posterView.subtitle = nil
         collectionCell?.backgroundColor = .clear
@@ -58,7 +87,10 @@ extension RailTableViewCell: UICollectionViewDataSource {
 
 extension RailTableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Movie Select")
+        if purpose == .music {
+            let str = musicList[indexPath.row]
+            self.delegate?.didSelectMusic(str)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, canFocusItemAt indexPath: IndexPath) -> Bool {

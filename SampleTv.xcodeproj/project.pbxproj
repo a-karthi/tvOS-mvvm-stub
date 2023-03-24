@@ -20,6 +20,14 @@
 		CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */; };
 		CA06F40D29C997AB00DB53AB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */; };
 		CA217DC829CD89C3009B6C37 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DC729CD89C3009B6C37 /* VideoPlayerView.swift */; };
+		CA217DCA29CDA318009B6C37 /* MP3PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DC929CDA318009B6C37 /* MP3PlayerViewController.swift */; };
+		CA217DCC29CDA39B009B6C37 /* MP3PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DCB29CDA39B009B6C37 /* MP3PlayerView.swift */; };
+		CA217DCE29CDA3FD009B6C37 /* MP3PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DCD29CDA3FD009B6C37 /* MP3PlayerViewModel.swift */; };
+		CA217E6729CDA752009B6C37 /* Beat It.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA217E6429CDA752009B6C37 /* Beat It.mp3 */; };
+		CA217E6829CDA752009B6C37 /* Baby Be Mine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA217E6529CDA752009B6C37 /* Baby Be Mine.mp3 */; };
+		CA217E6929CDA752009B6C37 /* Billie Jean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA217E6629CDA752009B6C37 /* Billie Jean.mp3 */; };
+		CA217E6B29CDA92C009B6C37 /* Bloody Sweet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA217E6A29CDA92C009B6C37 /* Bloody Sweet.mp3 */; };
+		CA217E6D29CDAA0B009B6C37 /* MP3Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217E6C29CDAA0B009B6C37 /* MP3Model.swift */; };
 		CA23D4F629CC5AA2009B8688 /* RailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23D4F429CC5AA2009B8688 /* RailTableViewCell.swift */; };
 		CA23D4F929CC5C1C009B8688 /* RailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA23D4F829CC5C1C009B8688 /* RailTableViewCell.xib */; };
 		CA27028329CD6B5B00C4C79B /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA27028229CD6B5B00C4C79B /* PlayerTableViewCell.swift */; };
@@ -86,6 +94,14 @@
 		CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		CA217DC729CD89C3009B6C37 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoPlayerView.swift; path = ../../../../VideoPlayerView.swift; sourceTree = "<group>"; };
+		CA217DC929CDA318009B6C37 /* MP3PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP3PlayerViewController.swift; path = ../../../../MP3PlayerViewController.swift; sourceTree = "<group>"; };
+		CA217DCB29CDA39B009B6C37 /* MP3PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP3PlayerView.swift; path = ../../../../MP3PlayerView.swift; sourceTree = "<group>"; };
+		CA217DCD29CDA3FD009B6C37 /* MP3PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP3PlayerViewModel.swift; path = ../../../../MP3PlayerViewModel.swift; sourceTree = "<group>"; };
+		CA217E6429CDA752009B6C37 /* Beat It.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Beat It.mp3"; sourceTree = "<group>"; };
+		CA217E6529CDA752009B6C37 /* Baby Be Mine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Baby Be Mine.mp3"; sourceTree = "<group>"; };
+		CA217E6629CDA752009B6C37 /* Billie Jean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Billie Jean.mp3"; sourceTree = "<group>"; };
+		CA217E6A29CDA92C009B6C37 /* Bloody Sweet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bloody Sweet.mp3"; sourceTree = "<group>"; };
+		CA217E6C29CDAA0B009B6C37 /* MP3Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP3Model.swift; path = ../../../../MP3Model.swift; sourceTree = "<group>"; };
 		CA23D4F429CC5AA2009B8688 /* RailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RailTableViewCell.swift; sourceTree = "<group>"; };
 		CA23D4F829CC5C1C009B8688 /* RailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RailTableViewCell.xib; sourceTree = "<group>"; };
 		CA27028229CD6B5B00C4C79B /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
@@ -175,6 +191,7 @@
 				CAF1DCAD29C8BFCB0008544D /* Cells&Xibs */,
 				CAF1DC8C29C887690008544D /* NetworkManager */,
 				CAF1DC9529C8A8CC0008544D /* SupportingFiles */,
+				CA217E6329CDA6FE009B6C37 /* music */,
 				CA01EB6729C8846F00CD12BF /* Main.storyboard */,
 				CA01EB6A29C8847400CD12BF /* Assets.xcassets */,
 				CA01EB6C29C8847400CD12BF /* LaunchScreen.storyboard */,
@@ -213,6 +230,7 @@
 			children = (
 				CAF1DC9E29C8AB5A0008544D /* ErrorNetworkResponse.swift */,
 				CAF1DCAB29C8B6E50008544D /* CoffeeNetworkResponse.swift */,
+				CA217E6C29CDAA0B009B6C37 /* MP3Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +243,7 @@
 				CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */,
 				CAF4CF6829CC369700CF14BB /* OttHomeView.swift */,
 				CA217DC729CD89C3009B6C37 /* VideoPlayerView.swift */,
+				CA217DCB29CDA39B009B6C37 /* MP3PlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +254,7 @@
 				CAF1DCA929C8B2030008544D /* HomeViewModel.swift */,
 				CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */,
 				CAF4CF6A29CC372100CF14BB /* OttHomeViewModel.swift */,
+				CA217DCD29CDA3FD009B6C37 /* MP3PlayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -246,8 +266,20 @@
 				CA06F40629C9840E00DB53AB /* DetailViewController.swift */,
 				CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */,
 				CAF4CF6629CC362A00CF14BB /* OttHomeViewControler.swift */,
+				CA217DC929CDA318009B6C37 /* MP3PlayerViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA217E6329CDA6FE009B6C37 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				CA217E6A29CDA92C009B6C37 /* Bloody Sweet.mp3 */,
+				CA217E6529CDA752009B6C37 /* Baby Be Mine.mp3 */,
+				CA217E6429CDA752009B6C37 /* Beat It.mp3 */,
+				CA217E6629CDA752009B6C37 /* Billie Jean.mp3 */,
+			);
+			path = music;
 			sourceTree = "<group>";
 		};
 		CAF1DC8C29C887690008544D /* NetworkManager */ = {
@@ -404,7 +436,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA01EB6E29C8847400CD12BF /* LaunchScreen.storyboard in Resources */,
+				CA217E6829CDA752009B6C37 /* Baby Be Mine.mp3 in Resources */,
+				CA217E6B29CDA92C009B6C37 /* Bloody Sweet.mp3 in Resources */,
+				CA217E6929CDA752009B6C37 /* Billie Jean.mp3 in Resources */,
 				CA23D4F929CC5C1C009B8688 /* RailTableViewCell.xib in Resources */,
+				CA217E6729CDA752009B6C37 /* Beat It.mp3 in Resources */,
 				CAF1DCB129C8C0000008544D /* CofeeCollectionViewCell.xib in Resources */,
 				CA01EB6B29C8847400CD12BF /* Assets.xcassets in Resources */,
 				CA01EB6929C8846F00CD12BF /* Main.storyboard in Resources */,
@@ -436,14 +472,17 @@
 			files = (
 				CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */,
 				CAF1DCAA29C8B2030008544D /* HomeViewModel.swift in Sources */,
+				CA217DCA29CDA318009B6C37 /* MP3PlayerViewController.swift in Sources */,
 				CAF1DC9429C887690008544D /* NetworkRequest.swift in Sources */,
 				CAF1DC9129C887690008544D /* APIConstants.swift in Sources */,
 				CA27028329CD6B5B00C4C79B /* PlayerTableViewCell.swift in Sources */,
+				CA217DCC29CDA39B009B6C37 /* MP3PlayerView.swift in Sources */,
 				CA06F40D29C997AB00DB53AB /* ImageDownloader.swift in Sources */,
 				CAF1DC8B29C887210008544D /* HomeView.swift in Sources */,
 				CAF1DC9929C8A93D0008544D /* String.swift in Sources */,
 				CAF1DC9329C887690008544D /* NetworkRequestCalls.swift in Sources */,
 				CAF1DCA629C8AE630008544D /* BaseViewController.swift in Sources */,
+				CA217DCE29CDA3FD009B6C37 /* MP3PlayerViewModel.swift in Sources */,
 				CA06F40729C9840E00DB53AB /* DetailViewController.swift in Sources */,
 				CAF1DC9229C887690008544D /* NetworkManager.swift in Sources */,
 				CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */,
@@ -466,6 +505,7 @@
 				CAD1F45E29CB1F0000735BCC /* CheckoutTableViewCell.swift in Sources */,
 				CAF1DCA829C8B0580008544D /* UIViewController.swift in Sources */,
 				CAF1DC9B29C8AA9F0008544D /* AppConstants.swift in Sources */,
+				CA217E6D29CDAA0B009B6C37 /* MP3Model.swift in Sources */,
 				CAF4CF6B29CC372100CF14BB /* OttHomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

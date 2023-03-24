@@ -54,7 +54,7 @@ class OttHomeView: BaseView {
 
 extension OttHomeView: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -71,8 +71,10 @@ extension OttHomeView: UITableViewDelegate, UITableViewDataSource {
             header?.populateDateCell("Latest & Trending")
         case 2:
             header?.populateDateCell("Popular Movies")
-        default:
+        case 3:
             header?.populateDateCell("Movies from 2020's")
+        default:
+            header?.populateDateCell("Music")
         }
         
         return header ?? UIView()
@@ -103,12 +105,26 @@ extension OttHomeView: UITableViewDelegate, UITableViewDataSource {
                 cell?.loadData(strs)
             }
             return cell ?? UITableViewCell()
-        default:
+        case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: "RailTableViewCell", for: indexPath) as? RailTableViewCell
             if let strs = self.ottHomeViewController?.getPopularShows() {
                 cell?.loadData(strs)
             }
             return cell ?? UITableViewCell()
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "RailTableViewCell", for: indexPath) as? RailTableViewCell
+            cell?.delegate = self
+            if let mp3s = self.ottHomeViewController?.getMusicList() {
+                cell?.loadMp3s(mp3s)
+            }
+            return cell ?? UITableViewCell()
         }
+    }
+}
+
+
+extension OttHomeView: RailTableViewCellDidSelectProtocol {
+    func didSelectMusic(_ mp3: MP3Model) {
+        self.ottHomeViewController?.routeToMp3Player(mp3)
     }
 }
