@@ -6,7 +6,8 @@
 //
 import Foundation
 
-
+/// Its the base view model that inherits all view model classes inside application and helps to acheive mvvm
+/// 
 class BaseViewModel: NSObject {
     
     override init() {

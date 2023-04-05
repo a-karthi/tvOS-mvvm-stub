@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+/// Its the base view controller that inherits all view controller classes inside application and helps to acheive mvvm
+
 class BaseViewController: UIViewController {
     
     fileprivate var _baseView : BaseView? {

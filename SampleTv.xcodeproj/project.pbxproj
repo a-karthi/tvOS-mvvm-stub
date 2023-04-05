@@ -19,7 +19,6 @@
 		CA06F40929C98DAB00DB53AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40829C98DAB00DB53AB /* DetailView.swift */; };
 		CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */; };
 		CA06F40D29C997AB00DB53AB /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */; };
-		CA217DC829CD89C3009B6C37 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DC729CD89C3009B6C37 /* VideoPlayerView.swift */; };
 		CA217DCA29CDA318009B6C37 /* MP3PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DC929CDA318009B6C37 /* MP3PlayerViewController.swift */; };
 		CA217DCC29CDA39B009B6C37 /* MP3PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DCB29CDA39B009B6C37 /* MP3PlayerView.swift */; };
 		CA217DCE29CDA3FD009B6C37 /* MP3PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA217DCD29CDA3FD009B6C37 /* MP3PlayerViewModel.swift */; };
@@ -35,6 +34,7 @@
 		CAD1F45A29CB1BD800735BCC /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */; };
 		CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */; };
 		CAD1F45E29CB1F0000735BCC /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */; };
+		CAD880C329D2B59600C4E1F5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD880C229D2B59600C4E1F5 /* VideoPlayerView.swift */; };
 		CAF1DC8B29C887210008544D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DC8A29C887210008544D /* HomeView.swift */; };
 		CAF1DC9129C887690008544D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DC8D29C887690008544D /* APIConstants.swift */; };
 		CAF1DC9229C887690008544D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF1DC8E29C887690008544D /* NetworkManager.swift */; };
@@ -93,7 +93,6 @@
 		CA06F40829C98DAB00DB53AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		CA06F40C29C997AB00DB53AB /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		CA217DC729CD89C3009B6C37 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoPlayerView.swift; path = ../../../../VideoPlayerView.swift; sourceTree = "<group>"; };
 		CA217DC929CDA318009B6C37 /* MP3PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP3PlayerViewController.swift; path = ../../../../MP3PlayerViewController.swift; sourceTree = "<group>"; };
 		CA217DCB29CDA39B009B6C37 /* MP3PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP3PlayerView.swift; path = ../../../../MP3PlayerView.swift; sourceTree = "<group>"; };
 		CA217DCD29CDA3FD009B6C37 /* MP3PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MP3PlayerViewModel.swift; path = ../../../../MP3PlayerViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 		CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
+		CAD880C229D2B59600C4E1F5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		CAF1DC8A29C887210008544D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CAF1DC8D29C887690008544D /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		CAF1DC8E29C887690008544D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -239,10 +239,10 @@
 			isa = PBXGroup;
 			children = (
 				CAF1DC8A29C887210008544D /* HomeView.swift */,
+				CAD880C229D2B59600C4E1F5 /* VideoPlayerView.swift */,
 				CA06F40829C98DAB00DB53AB /* DetailView.swift */,
 				CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */,
 				CAF4CF6829CC369700CF14BB /* OttHomeView.swift */,
-				CA217DC729CD89C3009B6C37 /* VideoPlayerView.swift */,
 				CA217DCB29CDA39B009B6C37 /* MP3PlayerView.swift */,
 			);
 			path = View;
@@ -471,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */,
+				CAD880C329D2B59600C4E1F5 /* VideoPlayerView.swift in Sources */,
 				CAF1DCAA29C8B2030008544D /* HomeViewModel.swift in Sources */,
 				CA217DCA29CDA318009B6C37 /* MP3PlayerViewController.swift in Sources */,
 				CAF1DC9429C887690008544D /* NetworkRequest.swift in Sources */,
@@ -487,7 +488,6 @@
 				CAF1DC9229C887690008544D /* NetworkManager.swift in Sources */,
 				CA06F40B29C98E3300DB53AB /* DetailViewModel.swift in Sources */,
 				CA01EB6629C8846F00CD12BF /* HomeViewController.swift in Sources */,
-				CA217DC829CD89C3009B6C37 /* VideoPlayerView.swift in Sources */,
 				CA23D4F629CC5AA2009B8688 /* RailTableViewCell.swift in Sources */,
 				CAD1F45A29CB1BD800735BCC /* CheckOutViewController.swift in Sources */,
 				CA06F40929C98DAB00DB53AB /* DetailView.swift in Sources */,

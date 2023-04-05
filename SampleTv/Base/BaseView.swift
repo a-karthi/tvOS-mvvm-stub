@@ -7,6 +7,8 @@
 
 import UIKit
 
+/// Its the base view that inherits all view classes inside application and helps to acheive mvvm
+
 class BaseView: UIView {
     
     fileprivate var baseVC : BaseViewController?

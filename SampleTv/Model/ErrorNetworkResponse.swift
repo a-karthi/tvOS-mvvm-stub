@@ -6,6 +6,8 @@
 //
 import Foundation
 
+// Class ErrorStatusResponse
+
 class ErrorStatusResponse: Codable {
     let status: Int?
     let msg: String?

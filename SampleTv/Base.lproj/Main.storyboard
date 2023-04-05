@@ -439,7 +439,7 @@
                                         </constraints>
                                         <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="play"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system"/>
                                         <connections>
                                             <action selector="playButtonAction:" destination="aNh-5N-YRl" eventType="primaryActionTriggered" id="S4Y-pt-vYd"/>
                                         </connections>
@@ -491,7 +491,7 @@
         <image name="cart" width="60" height="60"/>
         <image name="menu" width="40" height="40"/>
         <image name="next" width="129" height="129"/>
-        <image name="play" width="178" height="178"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="121"/>
         <image name="previous" width="129" height="129"/>
         <namedColor name="Hotstar-Colour">
             <color red="0.15294117647058825" green="0.19607843137254902" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

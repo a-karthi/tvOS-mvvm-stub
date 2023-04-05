@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import TVUIKit
+
+/// App delegate sets root view controller and handles apps life cycle
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

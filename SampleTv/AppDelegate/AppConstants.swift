@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// App constants contains constant values used inside application
+
 enum SampleTV {
 
     static var appName = "SampleTV"
