@@ -31,6 +31,13 @@
 		CA23D4F929CC5C1C009B8688 /* RailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA23D4F829CC5C1C009B8688 /* RailTableViewCell.xib */; };
 		CA27028329CD6B5B00C4C79B /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA27028229CD6B5B00C4C79B /* PlayerTableViewCell.swift */; };
 		CA27028529CD6BBC00C4C79B /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA27028429CD6BBC00C4C79B /* PlayerTableViewCell.xib */; };
+		CA3A9CD929DED3800060992C /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A9CD829DED3800060992C /* SigninViewController.swift */; };
+		CA3A9CDB29DED3E00060992C /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A9CDA29DED3E00060992C /* SigninView.swift */; };
+		CA3A9CDD29DED4AA0060992C /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A9CDC29DED4AA0060992C /* SigninViewModel.swift */; };
+		CA3A9D0C29DEDED00060992C /* CustomFocusEffectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A9D0829DEDED00060992C /* CustomFocusEffectCoordinator.swift */; };
+		CA3A9D0D29DEDED00060992C /* CustomFocusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A9D0929DEDED00060992C /* CustomFocusableButton.swift */; };
+		CA3A9D0E29DEDED00060992C /* ParallaxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A9D0A29DEDED00060992C /* ParallaxStyle.swift */; };
+		CA3A9D0F29DEDED00060992C /* CustomFocusableViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3A9D0B29DEDED00060992C /* CustomFocusableViewType.swift */; };
 		CAD1F45A29CB1BD800735BCC /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */; };
 		CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */; };
 		CAD1F45E29CB1F0000735BCC /* CheckoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */; };
@@ -58,6 +65,7 @@
 		CAF4CF6B29CC372100CF14BB /* OttHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4CF6A29CC372100CF14BB /* OttHomeViewModel.swift */; };
 		CAF4CF6D29CC48DD00CF14BB /* OttTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF4CF6C29CC48DD00CF14BB /* OttTableHeaderView.swift */; };
 		CAF4CF6F29CC495200CF14BB /* OttTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF4CF6E29CC495200CF14BB /* OttTableHeaderView.xib */; };
+		CAF5C02829E52B0900D6D7A3 /* CustomFocusUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5C02729E52B0900D6D7A3 /* CustomFocusUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +113,13 @@
 		CA23D4F829CC5C1C009B8688 /* RailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RailTableViewCell.xib; sourceTree = "<group>"; };
 		CA27028229CD6B5B00C4C79B /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		CA27028429CD6BBC00C4C79B /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTableViewCell.xib; sourceTree = "<group>"; };
+		CA3A9CD829DED3800060992C /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		CA3A9CDA29DED3E00060992C /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SigninView.swift; path = ../../../../SigninView.swift; sourceTree = "<group>"; };
+		CA3A9CDC29DED4AA0060992C /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
+		CA3A9D0829DEDED00060992C /* CustomFocusEffectCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusEffectCoordinator.swift; sourceTree = "<group>"; };
+		CA3A9D0929DEDED00060992C /* CustomFocusableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusableButton.swift; sourceTree = "<group>"; };
+		CA3A9D0A29DEDED00060992C /* ParallaxStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxStyle.swift; sourceTree = "<group>"; };
+		CA3A9D0B29DEDED00060992C /* CustomFocusableViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusableViewType.swift; sourceTree = "<group>"; };
 		CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 		CAD1F45D29CB1F0000735BCC /* CheckoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +147,7 @@
 		CAF4CF6A29CC372100CF14BB /* OttHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OttHomeViewModel.swift; sourceTree = "<group>"; };
 		CAF4CF6C29CC48DD00CF14BB /* OttTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OttTableHeaderView.swift; sourceTree = "<group>"; };
 		CAF4CF6E29CC495200CF14BB /* OttTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OttTableHeaderView.xib; sourceTree = "<group>"; };
+		CAF5C02729E52B0900D6D7A3 /* CustomFocusUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFocusUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +198,7 @@
 		CA01EB6229C8846F00CD12BF /* SampleTv */ = {
 			isa = PBXGroup;
 			children = (
+				CA3A9D1029DEDED40060992C /* CustomFocus */,
 				CAF1DCA029C8ADE60008544D /* Base */,
 				CA01EB9029C884C400CD12BF /* AppDelegate */,
 				CA01EB9129C884D600CD12BF /* Model */,
@@ -244,6 +261,7 @@
 				CAD1F45B29CB1C6900735BCC /* CheckOutView.swift */,
 				CAF4CF6829CC369700CF14BB /* OttHomeView.swift */,
 				CA217DCB29CDA39B009B6C37 /* MP3PlayerView.swift */,
+				CA3A9CDA29DED3E00060992C /* SigninView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +273,7 @@
 				CA06F40A29C98E3300DB53AB /* DetailViewModel.swift */,
 				CAF4CF6A29CC372100CF14BB /* OttHomeViewModel.swift */,
 				CA217DCD29CDA3FD009B6C37 /* MP3PlayerViewModel.swift */,
+				CA3A9CDC29DED4AA0060992C /* SigninViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -267,6 +286,7 @@
 				CAD1F45929CB1BD800735BCC /* CheckOutViewController.swift */,
 				CAF4CF6629CC362A00CF14BB /* OttHomeViewControler.swift */,
 				CA217DC929CDA318009B6C37 /* MP3PlayerViewController.swift */,
+				CA3A9CD829DED3800060992C /* SigninViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,6 +300,18 @@
 				CA217E6629CDA752009B6C37 /* Billie Jean.mp3 */,
 			);
 			path = music;
+			sourceTree = "<group>";
+		};
+		CA3A9D1029DEDED40060992C /* CustomFocus */ = {
+			isa = PBXGroup;
+			children = (
+				CAF5C02729E52B0900D6D7A3 /* CustomFocusUIButton.swift */,
+				CA3A9D0929DEDED00060992C /* CustomFocusableButton.swift */,
+				CA3A9D0B29DEDED00060992C /* CustomFocusableViewType.swift */,
+				CA3A9D0829DEDED00060992C /* CustomFocusEffectCoordinator.swift */,
+				CA3A9D0A29DEDED00060992C /* ParallaxStyle.swift */,
+			);
+			path = CustomFocus;
 			sourceTree = "<group>";
 		};
 		CAF1DC8C29C887690008544D /* NetworkManager */ = {
@@ -472,17 +504,25 @@
 			files = (
 				CAD1F45C29CB1C6900735BCC /* CheckOutView.swift in Sources */,
 				CAD880C329D2B59600C4E1F5 /* VideoPlayerView.swift in Sources */,
+				CA3A9CDB29DED3E00060992C /* SigninView.swift in Sources */,
 				CAF1DCAA29C8B2030008544D /* HomeViewModel.swift in Sources */,
 				CA217DCA29CDA318009B6C37 /* MP3PlayerViewController.swift in Sources */,
+				CA3A9D0D29DEDED00060992C /* CustomFocusableButton.swift in Sources */,
 				CAF1DC9429C887690008544D /* NetworkRequest.swift in Sources */,
 				CAF1DC9129C887690008544D /* APIConstants.swift in Sources */,
+				CA3A9D0F29DEDED00060992C /* CustomFocusableViewType.swift in Sources */,
 				CA27028329CD6B5B00C4C79B /* PlayerTableViewCell.swift in Sources */,
 				CA217DCC29CDA39B009B6C37 /* MP3PlayerView.swift in Sources */,
+				CA3A9D0E29DEDED00060992C /* ParallaxStyle.swift in Sources */,
 				CA06F40D29C997AB00DB53AB /* ImageDownloader.swift in Sources */,
 				CAF1DC8B29C887210008544D /* HomeView.swift in Sources */,
+				CA3A9CD929DED3800060992C /* SigninViewController.swift in Sources */,
+				CA3A9CDD29DED4AA0060992C /* SigninViewModel.swift in Sources */,
 				CAF1DC9929C8A93D0008544D /* String.swift in Sources */,
+				CAF5C02829E52B0900D6D7A3 /* CustomFocusUIButton.swift in Sources */,
 				CAF1DC9329C887690008544D /* NetworkRequestCalls.swift in Sources */,
 				CAF1DCA629C8AE630008544D /* BaseViewController.swift in Sources */,
+				CA3A9D0C29DEDED00060992C /* CustomFocusEffectCoordinator.swift in Sources */,
 				CA217DCE29CDA3FD009B6C37 /* MP3PlayerViewModel.swift in Sources */,
 				CA06F40729C9840E00DB53AB /* DetailViewController.swift in Sources */,
 				CAF1DC9229C887690008544D /* NetworkManager.swift in Sources */,
